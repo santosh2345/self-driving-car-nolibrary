@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Driving-Car with vanilla JS</title>
+    <link rel="stylesheet"  href="style.css" >
+</head>
+<body>
+
+    <!-- object areaaa -->
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+        <p id="desc"><span id="Feed">Feed-Forward Neural Network</span><br/>First try with the 100 number of cars and when one of the best car reaches far than others car then save that and refresh again and repeat it until one car passes all the other dummy cars and save that and make car number to 1 and refresh.</p>
+        <label style="color: white;">Number of Cars</label>
+       <input id="carNumberr" type="number" placeholder="Enter number and refresh">
+        <button onclick="savecarnumber()">Save carNumber</button>
+        <button onclick="save()">Save best car</button>
+        <button onclick="discard()">Delete data 🥛</button>
+        <span style="color:white"><input type="checkbox" id="player" name="player" value="player" onchange="handlePlayer()">Wanna drive yourself ? (refresh)</span>
+       
+
+    </div>
+    <canvas id="networkCanvas"></canvas>
+
+
+
+    <!-- adding js files -->
+    <script src="utils.js"></script>
+
+    <script src="visualizer.js"></script>
+
+    <script src="network.js"></script>
+
+    <script src="sensor.js"></script>
+
+
+    <script src="road.js"></script>
+
+    <script src="controls.js"></script>
+
+    <script src="car.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

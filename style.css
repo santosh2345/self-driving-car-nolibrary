@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 0.5rem;
+  
+}
+
+button{
+    border: none ; 
+    border-radius: 5px;
+    /* padding: 5px,5px,7px,5px;
+     */
+     padding: 1.1rem;
+    margin: 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: orange;
+}
+#networkCanvas{
+    background: rgb(116, 113, 113);
+    
+     /* background: lightgray; */
+}
+
+#carCanvas{
+    background: rgb(36, 35, 35);
+    
+     /* background: lightgray; */
+}
+
+#desc{
+    text-align: justify;
+    width: 80%;
+    padding: 1rem;
+    color: white;
+    height: auto;
+    scroll-behavior: unset;
+    
+    /* overflow: scroll; */
+}
+
+#desc span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#rad{
+    color: white;
+}
+
+input{
+    padding: 1rem;
+    border-radius: 10px;
+}
